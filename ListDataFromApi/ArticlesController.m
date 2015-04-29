@@ -91,10 +91,6 @@ NSMutableArray *articles;
     
     ArticleController *controller = [segue destinationViewController];
     controller.articleID = articleID;
-    
-    
-    
-    //
 }
 
 @end

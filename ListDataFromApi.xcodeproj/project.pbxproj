@@ -10,6 +10,26 @@
 		2DE8ECC5C646A6D943EB4D33 /* libPods-ListDataFromApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B25A074EEE19850C86D14FDA /* libPods-ListDataFromApi.a */; };
 		FC2BAE881AEC9F890098A2D7 /* PartnersController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2BAE871AEC9F890098A2D7 /* PartnersController.m */; };
 		FC5FF5611AEF1E5400A72869 /* ArticleController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5FF5601AEF1E5400A72869 /* ArticleController.m */; };
+		FC66023B1AF0554900723D97 /* RecipeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6602381AF0554900723D97 /* RecipeController.m */; };
+		FC66023C1AF0554900723D97 /* TipController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC66023A1AF0554900723D97 /* TipController.m */; };
+		FC6602501AF05A8700723D97 /* apple-touch-icon-114x114-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = FC66023E1AF05A8700723D97 /* apple-touch-icon-114x114-precomposed.png */; };
+		FC6602511AF05A8700723D97 /* apple-touch-icon-144x144-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = FC66023F1AF05A8700723D97 /* apple-touch-icon-144x144-precomposed.png */; };
+		FC6602521AF05A8700723D97 /* apple-touch-icon-72x72-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6602401AF05A8700723D97 /* apple-touch-icon-72x72-precomposed.png */; };
+		FC6602531AF05A8700723D97 /* apple-touch-icon-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6602411AF05A8700723D97 /* apple-touch-icon-precomposed.png */; };
+		FC6602541AF05A8700723D97 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6602421AF05A8700723D97 /* Icon-72.png */; };
+		FC6602551AF05A8700723D97 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6602431AF05A8700723D97 /* Icon-72@2x.png */; };
+		FC6602561AF05A8700723D97 /* Icon-Small-20.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6602441AF05A8700723D97 /* Icon-Small-20.png */; };
+		FC6602571AF05A8700723D97 /* Icon-Small-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6602451AF05A8700723D97 /* Icon-Small-20@2x.png */; };
+		FC6602581AF05A8700723D97 /* Icon-Small-30.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6602461AF05A8700723D97 /* Icon-Small-30.png */; };
+		FC6602591AF05A8700723D97 /* Icon-Small-30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6602471AF05A8700723D97 /* Icon-Small-30@2x.png */; };
+		FC66025A1AF05A8700723D97 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6602481AF05A8700723D97 /* Icon-Small-50.png */; };
+		FC66025B1AF05A8700723D97 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6602491AF05A8700723D97 /* Icon-Small-50@2x.png */; };
+		FC66025C1AF05A8700723D97 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = FC66024A1AF05A8700723D97 /* Icon-Small.png */; };
+		FC66025D1AF05A8700723D97 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC66024B1AF05A8700723D97 /* Icon-Small@2x.png */; };
+		FC66025E1AF05A8700723D97 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC66024C1AF05A8700723D97 /* Icon.png */; };
+		FC66025F1AF05A8700723D97 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC66024D1AF05A8700723D97 /* Icon@2x.png */; };
+		FC6602601AF05A8700723D97 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = FC66024E1AF05A8700723D97 /* iTunesArtwork.png */; };
+		FC6602611AF05A8700723D97 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC66024F1AF05A8700723D97 /* iTunesArtwork@2x.png */; };
 		FC970A841AEC7D2800265478 /* ArticlesController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC970A7D1AEC7D2800265478 /* ArticlesController.m */; };
 		FC970A851AEC7D2800265478 /* RecipesController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC970A7F1AEC7D2800265478 /* RecipesController.m */; };
 		FC970A861AEC7D2800265478 /* TipsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC970A811AEC7D2800265478 /* TipsController.m */; };
@@ -43,6 +63,28 @@
 		FC2BAE891AEC9F990098A2D7 /* PartnersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartnersController.h; sourceTree = "<group>"; };
 		FC5FF55F1AEF1E5400A72869 /* ArticleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleController.h; sourceTree = "<group>"; };
 		FC5FF5601AEF1E5400A72869 /* ArticleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleController.m; sourceTree = "<group>"; };
+		FC6602371AF0554900723D97 /* RecipeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeController.h; sourceTree = "<group>"; };
+		FC6602381AF0554900723D97 /* RecipeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeController.m; sourceTree = "<group>"; };
+		FC6602391AF0554900723D97 /* TipController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipController.h; sourceTree = "<group>"; };
+		FC66023A1AF0554900723D97 /* TipController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipController.m; sourceTree = "<group>"; };
+		FC66023E1AF05A8700723D97 /* apple-touch-icon-114x114-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-114x114-precomposed.png"; sourceTree = "<group>"; };
+		FC66023F1AF05A8700723D97 /* apple-touch-icon-144x144-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-144x144-precomposed.png"; sourceTree = "<group>"; };
+		FC6602401AF05A8700723D97 /* apple-touch-icon-72x72-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-72x72-precomposed.png"; sourceTree = "<group>"; };
+		FC6602411AF05A8700723D97 /* apple-touch-icon-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-precomposed.png"; sourceTree = "<group>"; };
+		FC6602421AF05A8700723D97 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		FC6602431AF05A8700723D97 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		FC6602441AF05A8700723D97 /* Icon-Small-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-20.png"; sourceTree = "<group>"; };
+		FC6602451AF05A8700723D97 /* Icon-Small-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-20@2x.png"; sourceTree = "<group>"; };
+		FC6602461AF05A8700723D97 /* Icon-Small-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-30.png"; sourceTree = "<group>"; };
+		FC6602471AF05A8700723D97 /* Icon-Small-30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-30@2x.png"; sourceTree = "<group>"; };
+		FC6602481AF05A8700723D97 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		FC6602491AF05A8700723D97 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		FC66024A1AF05A8700723D97 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		FC66024B1AF05A8700723D97 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		FC66024C1AF05A8700723D97 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		FC66024D1AF05A8700723D97 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		FC66024E1AF05A8700723D97 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		FC66024F1AF05A8700723D97 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		FC970A7C1AEC7D2800265478 /* ArticlesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticlesController.h; sourceTree = "<group>"; };
 		FC970A7D1AEC7D2800265478 /* ArticlesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticlesController.m; sourceTree = "<group>"; };
 		FC970A7E1AEC7D2800265478 /* RecipesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipesController.h; sourceTree = "<group>"; };
@@ -105,6 +147,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FC66023D1AF05A8700723D97 /* appicons */ = {
+			isa = PBXGroup;
+			children = (
+				FC66023E1AF05A8700723D97 /* apple-touch-icon-114x114-precomposed.png */,
+				FC66023F1AF05A8700723D97 /* apple-touch-icon-144x144-precomposed.png */,
+				FC6602401AF05A8700723D97 /* apple-touch-icon-72x72-precomposed.png */,
+				FC6602411AF05A8700723D97 /* apple-touch-icon-precomposed.png */,
+				FC6602421AF05A8700723D97 /* Icon-72.png */,
+				FC6602431AF05A8700723D97 /* Icon-72@2x.png */,
+				FC6602441AF05A8700723D97 /* Icon-Small-20.png */,
+				FC6602451AF05A8700723D97 /* Icon-Small-20@2x.png */,
+				FC6602461AF05A8700723D97 /* Icon-Small-30.png */,
+				FC6602471AF05A8700723D97 /* Icon-Small-30@2x.png */,
+				FC6602481AF05A8700723D97 /* Icon-Small-50.png */,
+				FC6602491AF05A8700723D97 /* Icon-Small-50@2x.png */,
+				FC66024A1AF05A8700723D97 /* Icon-Small.png */,
+				FC66024B1AF05A8700723D97 /* Icon-Small@2x.png */,
+				FC66024C1AF05A8700723D97 /* Icon.png */,
+				FC66024D1AF05A8700723D97 /* Icon@2x.png */,
+				FC66024E1AF05A8700723D97 /* iTunesArtwork.png */,
+				FC66024F1AF05A8700723D97 /* iTunesArtwork@2x.png */,
+			);
+			path = appicons;
+			sourceTree = "<group>";
+		};
 		FCBB15C31AEBD8B400E16A53 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +195,10 @@
 		FCBB15CE1AEBD8B500E16A53 /* ListDataFromApi */ = {
 			isa = PBXGroup;
 			children = (
+				FC6602371AF0554900723D97 /* RecipeController.h */,
+				FC6602381AF0554900723D97 /* RecipeController.m */,
+				FC6602391AF0554900723D97 /* TipController.h */,
+				FC66023A1AF0554900723D97 /* TipController.m */,
 				FC5FF55F1AEF1E5400A72869 /* ArticleController.h */,
 				FC5FF5601AEF1E5400A72869 /* ArticleController.m */,
 				FC2BAE891AEC9F990098A2D7 /* PartnersController.h */,
@@ -158,6 +229,7 @@
 		FCBB15CF1AEBD8B500E16A53 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FC66023D1AF05A8700723D97 /* appicons */,
 				FCBB15D01AEBD8B500E16A53 /* Info.plist */,
 				FCBB15D11AEBD8B500E16A53 /* main.m */,
 			);
@@ -263,9 +335,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC66025E1AF05A8700723D97 /* Icon.png in Resources */,
+				FC66025C1AF05A8700723D97 /* Icon-Small.png in Resources */,
+				FC6602521AF05A8700723D97 /* apple-touch-icon-72x72-precomposed.png in Resources */,
+				FC66025A1AF05A8700723D97 /* Icon-Small-50.png in Resources */,
 				FCBB15DE1AEBD8B500E16A53 /* Main.storyboard in Resources */,
+				FC66025D1AF05A8700723D97 /* Icon-Small@2x.png in Resources */,
+				FC6602561AF05A8700723D97 /* Icon-Small-20.png in Resources */,
+				FC6602581AF05A8700723D97 /* Icon-Small-30.png in Resources */,
+				FC6602551AF05A8700723D97 /* Icon-72@2x.png in Resources */,
 				FCBB15E31AEBD8B500E16A53 /* LaunchScreen.xib in Resources */,
+				FC6602511AF05A8700723D97 /* apple-touch-icon-144x144-precomposed.png in Resources */,
+				FC6602571AF05A8700723D97 /* Icon-Small-20@2x.png in Resources */,
+				FC6602501AF05A8700723D97 /* apple-touch-icon-114x114-precomposed.png in Resources */,
+				FC6602541AF05A8700723D97 /* Icon-72.png in Resources */,
 				FCBB15E01AEBD8B500E16A53 /* Images.xcassets in Resources */,
+				FC66025F1AF05A8700723D97 /* Icon@2x.png in Resources */,
+				FC6602611AF05A8700723D97 /* iTunesArtwork@2x.png in Resources */,
+				FC66025B1AF05A8700723D97 /* Icon-Small-50@2x.png in Resources */,
+				FC6602591AF05A8700723D97 /* Icon-Small-30@2x.png in Resources */,
+				FC6602601AF05A8700723D97 /* iTunesArtwork.png in Resources */,
+				FC6602531AF05A8700723D97 /* apple-touch-icon-precomposed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +415,8 @@
 				FCBB15D51AEBD8B500E16A53 /* AppDelegate.m in Sources */,
 				FC970A851AEC7D2800265478 /* RecipesController.m in Sources */,
 				FC5FF5611AEF1E5400A72869 /* ArticleController.m in Sources */,
+				FC66023C1AF0554900723D97 /* TipController.m in Sources */,
+				FC66023B1AF0554900723D97 /* RecipeController.m in Sources */,
 				FCBB15DB1AEBD8B500E16A53 /* ViewController.m in Sources */,
 				FCBB15D21AEBD8B500E16A53 /* main.m in Sources */,
 			);

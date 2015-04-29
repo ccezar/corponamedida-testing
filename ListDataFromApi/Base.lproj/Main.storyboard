@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2Mc-gS-KVG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2Mc-gS-KVG">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -38,7 +38,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SKF-rb-FZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4111" y="-619"/>
+            <point key="canvasLocation" x="2507" y="-181"/>
         </scene>
         <!--Parceiros-->
         <scene sceneID="6e5-pm-BjC">
@@ -65,7 +65,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="60A-E7-Vak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3207" y="1095"/>
+            <point key="canvasLocation" x="2631" y="919"/>
         </scene>
         <!--Vídeos-->
         <scene sceneID="bfL-K3-Iin">
@@ -95,7 +95,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Es2-FP-riX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5465" y="-101"/>
+            <point key="canvasLocation" x="3961" y="175"/>
         </scene>
         <!--Receitas-->
         <scene sceneID="Buv-0q-Ibh">
@@ -121,11 +121,46 @@
                     <navigationItem key="navigationItem" title="Receitas" id="Ki6-fH-ty8"/>
                     <connections>
                         <outlet property="recipesTableView" destination="HZH-UH-KFN" id="BEH-CK-xdg"/>
+                        <segue destination="xjM-BX-NkM" kind="show" identifier="FullRecipeSegue" id="XQ4-1F-Hmx"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQl-qF-IW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4829" y="-101"/>
+            <point key="canvasLocation" x="3961" y="875"/>
+        </scene>
+        <!--Receita-->
+        <scene sceneID="hgO-kg-lQD">
+            <objects>
+                <viewController id="xjM-BX-NkM" customClass="RecipeController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BAC-yQ-HyU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jfh-uH-xoS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ao4-i2-XZr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUR-UR-o7W">
+                                <rect key="frame" x="2" y="0.0" width="596" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wUR-UR-o7W" firstAttribute="leading" secondItem="ao4-i2-XZr" secondAttribute="leadingMargin" constant="-14" id="dpN-6z-7VL"/>
+                            <constraint firstItem="wUR-UR-o7W" firstAttribute="top" secondItem="ao4-i2-XZr" secondAttribute="topMargin" id="ems-8U-H77"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wUR-UR-o7W" secondAttribute="trailing" constant="-14" id="eql-R9-qPA"/>
+                            <constraint firstItem="wUR-UR-o7W" firstAttribute="bottom" secondItem="ao4-i2-XZr" secondAttribute="bottomMargin" id="xTV-wf-jqU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Receita" id="Jkd-JK-o7d"/>
+                    <connections>
+                        <outlet property="webViewFullRecipe" destination="wUR-UR-o7W" id="1Ij-0y-Jtr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qh9-gQ-pfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4737" y="875"/>
         </scene>
         <!--Dicas-->
         <scene sceneID="Uzp-vv-hiR">
@@ -151,11 +186,46 @@
                     <navigationItem key="navigationItem" title="Dicas" id="icH-w8-Cxy"/>
                     <connections>
                         <outlet property="tipsTableView" destination="Kzb-jz-U1t" id="ZBi-aP-QLr"/>
+                        <segue destination="Sq6-Pc-UOi" kind="show" identifier="FullTipSegue" id="wkj-UM-mpG"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QYS-7f-q5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4829" y="-753"/>
+            <point key="canvasLocation" x="3961" y="-553"/>
+        </scene>
+        <!--Dica-->
+        <scene sceneID="0MO-TD-f93">
+            <objects>
+                <viewController id="Sq6-Pc-UOi" customClass="TipController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ml7-fN-yBP"/>
+                        <viewControllerLayoutGuide type="bottom" id="TbT-01-A6J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3E3-M5-S6m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omQ-Xx-Ftp">
+                                <rect key="frame" x="2" y="0.0" width="596" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="omQ-Xx-Ftp" firstAttribute="top" secondItem="3E3-M5-S6m" secondAttribute="topMargin" id="Ize-WG-8HW"/>
+                            <constraint firstItem="omQ-Xx-Ftp" firstAttribute="leading" secondItem="3E3-M5-S6m" secondAttribute="leadingMargin" constant="-14" id="Zad-O7-YP3"/>
+                            <constraint firstItem="omQ-Xx-Ftp" firstAttribute="bottom" secondItem="3E3-M5-S6m" secondAttribute="bottomMargin" id="gDf-LW-2oc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="omQ-Xx-Ftp" secondAttribute="trailing" constant="-14" id="mS6-dR-TTc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dica" id="WvZ-tc-VT2"/>
+                    <connections>
+                        <outlet property="webViewFullTip" destination="omQ-Xx-Ftp" id="Rgt-9R-jMi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yei-qi-qFf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4669" y="-553"/>
         </scene>
         <!--Artigo-->
         <scene sceneID="71z-es-FFL">
@@ -201,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PuH-Uq-0wA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6215" y="-747"/>
+            <point key="canvasLocation" x="3955" y="-1321"/>
         </scene>
         <!--Artigos-->
         <scene sceneID="xoq-TY-b2E">
@@ -232,7 +302,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVG-B2-6IG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5465" y="-753"/>
+            <point key="canvasLocation" x="3225" y="-553"/>
         </scene>
         <!--Conteúdo-->
         <scene sceneID="LIH-Wn-ezj">
@@ -256,7 +326,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pBX-wc-Cjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3389" y="-619"/>
+            <point key="canvasLocation" x="1741" y="-181"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="gPb-ur-Exp">
@@ -277,7 +347,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kwy-xp-Ue9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2379" y="251"/>
+            <point key="canvasLocation" x="1033" y="899"/>
         </scene>
         <!--Parceiros-->
         <scene sceneID="ad7-lF-ABS">
@@ -300,7 +370,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2x-Fn-TLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2379" y="1095"/>
+            <point key="canvasLocation" x="1831" y="919"/>
         </scene>
     </scenes>
 </document>

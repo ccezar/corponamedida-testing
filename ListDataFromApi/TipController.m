@@ -1,27 +1,27 @@
 //
-//  ArticleController.m
+//  TipController.m
 //  ListDataFromApi
 //
-//  Created by Caio Cezar Lopes dos Santos on 27/04/15.
+//  Created by Caio Cezar Lopes dos Santos on 28/04/15.
 //  Copyright (c) 2015 Caio Cezar Lopes dos Santos. All rights reserved.
 //
 
-#import "ArticleController.h"
+#import "TipController.h"
 #import <MBProgressHUD.h>
 
-@interface ArticleController ()
+@interface TipController ()
 
 
 @end
 
-@implementation ArticleController
+@implementation TipController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.webViewFullArticle.delegate = self;
-    NSString *url = [NSString stringWithFormat: @"http://corponamedida.com.br/artigomobile/%@", self.articleID];
-    [self.webViewFullArticle loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
+    self.webViewFullTip.delegate = self;
+    NSString *url = [NSString stringWithFormat: @"http://corponamedida.com.br/dicamobile/%@", self.tipID];
+    [self.webViewFullTip loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,6 +7,7 @@
 //
 
 #import "RecipesController.h"
+#import "RecipeController.h"
 #import <AFNetworking.h>
 #import <MBProgressHUD.h>
 
@@ -32,7 +33,7 @@ NSMutableArray *recipes;
 
 - (void)fillTableWithRecipes
 {
-    [self fillTableWithData:@"http://corponamedida.com.br/apimobile/listardicas"];
+    [self fillTableWithData:@"http://corponamedida.com.br/apimobile/listarreceitas"];
 }
 
 - (void)fillTableWithData: (NSString *) url
@@ -77,5 +78,20 @@ NSMutableArray *recipes;
     
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier: @"FullRecipeSegue"
+                              sender: [recipes objectAtIndex: indexPath.row]];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSString *recipeID = [sender objectForKey: @"ID"];
+    
+    RecipeController *controller = [segue destinationViewController];
+    controller.recipeID = recipeID;
+}
+
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "TipsController.h"
+#import "TipController.h"
 #import <AFNetworking.h>
 #import <MBProgressHUD.h>
 
@@ -76,6 +77,20 @@ NSMutableArray *tips;
     cell.textLabel.text = [[tips objectAtIndex:indexPath.row] objectForKey: @"Titulo"];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier: @"FullTipSegue"
+                              sender: [tips objectAtIndex: indexPath.row]];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSString *tipID = [sender objectForKey: @"ID"];
+    
+    TipController *controller = [segue destinationViewController];
+    controller.tipID = tipID;
 }
 
 @end

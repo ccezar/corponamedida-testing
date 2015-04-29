@@ -1,27 +1,27 @@
 //
-//  ArticleController.m
+//  RecipeController.m
 //  ListDataFromApi
 //
-//  Created by Caio Cezar Lopes dos Santos on 27/04/15.
+//  Created by Caio Cezar Lopes dos Santos on 28/04/15.
 //  Copyright (c) 2015 Caio Cezar Lopes dos Santos. All rights reserved.
 //
 
-#import "ArticleController.h"
+#import "RecipeController.h"
 #import <MBProgressHUD.h>
 
-@interface ArticleController ()
+@interface RecipeController ()
 
 
 @end
 
-@implementation ArticleController
+@implementation RecipeController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.webViewFullArticle.delegate = self;
-    NSString *url = [NSString stringWithFormat: @"http://corponamedida.com.br/artigomobile/%@", self.articleID];
-    [self.webViewFullArticle loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
+    self.webViewFullRecipe.delegate = self;
+    NSString *url = [NSString stringWithFormat: @"http://corponamedida.com.br/receitamobile/%@", self.recipeID];
+    [self.webViewFullRecipe loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: url]]];
 }
 
 - (void)didReceiveMemoryWarning {
